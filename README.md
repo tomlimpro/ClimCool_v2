@@ -1,5 +1,12 @@
 # climcool_website
 
+## BUILD DOCKER
+docker build -t climcool .
+
+## LANCER IMAGE
+docker rm
+docker run -d -p 80:80 -it --name climcool climcool
+
 ## Project setup
 ```
 npm install
