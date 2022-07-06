@@ -1,14 +1,12 @@
 <template>
-  <div class="utilisateur-wrapper">
-    <h1>Test</h1>
+  <div class="groupe-wrapper">
+    <h1>GROUPE</h1>
   </div>
 </template>
 
 <script>
-
 export default {
-    name:'produits'
-
+    name: 'groupe-view'
 }
 </script>
 

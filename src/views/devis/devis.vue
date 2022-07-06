@@ -1,13 +1,13 @@
 <template>
-  <div class="utilisateur-wrapper">
-    <h1>Test</h1>
+  <div class="contact-devis-wrapper">
+    <h1>Contact_devis</h1>
   </div>
 </template>
 
 <script>
 
 export default {
-    name:'produits'
+    name:'contact_devis'
 
 }
 </script>

@@ -7,7 +7,8 @@
 <script>
 
 export default {
-    name:'produits'
+    components:{},
+    name:'list_climatiseurs'
 
 }
 </script>
