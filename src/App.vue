@@ -13,7 +13,7 @@
                 <h1>ClimCool</h1>
             </div>
             <div class="menu-items">
-                 <router-link to="/" v-model="check">Accueil</router-link>
+                 <router-link to="/" @click.native="InlineButtonClickHandler">Accueil</router-link>
                 <router-link to="/Utilisateurs">Nos clients</router-link>
                 <router-link to="/Climatiseurs"> Nos solutions</router-link>
                 <router-link to="/Notre-groupe"> Notre groupe</router-link>
@@ -54,6 +54,7 @@ export default {
     position: sticky;
     top:0%;
     background-color:#2596BE ;
+     z-index: 5;
 }
 
 .nav-wrapper {  
@@ -125,7 +126,7 @@ export default {
     position: absolute;
     top: 17px;
     left: 20px;
-    z-index: 2;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
