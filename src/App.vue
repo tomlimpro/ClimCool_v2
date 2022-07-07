@@ -10,7 +10,7 @@
                 <span class="line line3"></span>
             </div>
             <div class="logo">
-                <router-link to="/" style="text-decoration: none; color: inherit; ;"><h1 id="nom_entreprise">ClimCool</h1></router-link>
+                <router-link to="/" style="text-decoration: none; color: inherit; "><h1 id="nom_entreprise">ClimCool</h1></router-link>
                 <img id="logo_climcool" src="./assets/logo_climcool.png">
             </div>
             <div class="menu-items">
@@ -80,7 +80,7 @@ export default {
 }
 
 .main-nav{
-    position: -webkit-sticky;
+    
     position: sticky;
     top:0%;
     background-color:#2596BE ;

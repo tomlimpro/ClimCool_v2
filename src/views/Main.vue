@@ -63,6 +63,11 @@
           <h1 style="text-align:center; font-weight:bolder;font-size:60px;">Êtes-vous intéressés par nos produits ?</h1>
           <p style="text-align:center;">Que vous soyez <span style="font-weight:bolder;">intéressés</span> par nos produits ou que vous souhaitiez avoir des <span style="font-weight:bolder;">renseignements</span> supplémentaires,<br> nous restons à votre disposition pour tous renseignements complémentaires.
           </p>
+          <nav id="nav-devis">
+              <ul id="ul-devis">
+                <router-link to="" style="text-decoration: none; color: inherit;"><li id="li-devis">Contact et devis<span></span><span></span><span></span><span></span></li></router-link>
+            </ul>
+          </nav>
         </div>
     </div> 
     </div>
@@ -130,7 +135,7 @@ export default {
     width: 100%;
     height: 100;
     margin:auto;
-    background: white;
+    background: white ;
     padding: 40px 55px 45px 55px;
     /* border-radius: 15px; */
     transition: all .3s;
@@ -297,5 +302,75 @@ nav ul li span:nth-child(4) {
 #nav-solutions #ul-solutions #li-solutions span:nth-child(4) {
     --n: 4;
 }
+
+/*** */
+
+
+  #nav-devis #ul-devis #li-devis {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+  }
+  #nav-devis #ul-devis #li-devis {
+    --c: #FFE36F;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 15em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1 ;
+    transition: 0.5s;
+    margin: 1em;
+    margin-left: 40em;
+    text-indent: 1.2em;
+}
+
+#nav-devis #ul-devis #li-devis span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+#nav-devis #ul-devis #li-devis:hover {
+    color: black;
+}
+
+#nav-devis #ul-devis #li-devis:hover span {
+    transform: translateY(0) scale(2);
+}
+
+#nav-devis #ul-devis #li-devis span:nth-child(1) {
+    --n: 1;
+}
+
+#nav-devis #ul-devis #li-devis span:nth-child(2) {
+    --n: 2;
+}
+
+#nav-devis #ul-devis #li-devis span:nth-child(3) {
+    --n: 3;
+}
+
+#nav-devis #ul-devis #li-devis span:nth-child(4) {
+    --n: 4;
+}
+
 
 </style>

@@ -7,56 +7,56 @@
      <div class="card">  
        <div class="face face1">  
          <div class="content">  
-           <img src="../../assets/monobloc-card.png">  
+           <router-link to="/Solutions/Monobloc"><img src="../../assets/monobloc-card.png"></router-link>  
            <h3>Monobloc</h3>  
          </div>  
        </div>  
        <div class="face face2">  
          <div class="content">  
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>  
-             <a href="#">Read More</a>  
+             <router-link to="/Solutions/Monobloc">En savoir plus.</router-link>
          </div>  
        </div>  
      </div>  
      <div class="card">  
        <div class="face face1">  
          <div class="content">  
-           <img src="../../assets/split-card.png">  
+           <router-link to="/Solutions/Split"><img src="../../assets/split-card.png"></router-link>  
            <h3>Split</h3>  
          </div>  
        </div>  
        <div class="face face2">  
          <div class="content">  
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>  
-             <a href="#">Read More</a>  
+             <router-link to="/Solutions/Split">En savoir plus.</router-link>
          </div>  
        </div>  
      </div>  
      <div class="card">  
        <div class="face face1">  
          <div class="content">  
-           <img src="../../assets/splitfixe-card.png">  
+           <router-link to="/Solutions/Splitfixe"><img src="../../assets/splitfixe-card.png"></router-link>  
            <h3>Split fixe</h3>  
          </div>  
        </div>  
        <div class="face face2">  
          <div class="content">  
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>  
-             <a href="#">Read More</a>  
+             <router-link to="/Solutions/Splitfixe">En savoir plus.</router-link>  
          </div>  
        </div>  
      </div>  
      <div class="card">  
        <div class="face face1">  
          <div class="content">  
-           <img src="../../assets/bisplit-fixe-card.png">  
+           <router-link to="/Solutions/Bisplitfixe"><img src="../../assets/bisplit-fixe-card.png"></router-link>
            <h3>Bi-split fixe</h3>  
          </div>  
        </div>  
        <div class="face face2">  
          <div class="content">  
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>  
-             <a href="#">Read More</a>  
+             <router-link to="/Solutions/Bisplitfixe">En savoir plus.</router-link>  
          </div>  
        </div>  
      </div>
