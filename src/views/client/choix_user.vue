@@ -1,92 +1,149 @@
 <template>
-  <div class="container">
-      <label>Name</label>
-      <input
-          type="text"
-          v-model="templateData.name"
-          name="name"
-          placeholder="Your Name"
-      >
-      <label>Email</label>
-      <input
-          type="email"
-          v-model="templateData.email"
-          name="email"
-          placeholder="Your Email"
-      >
-      <button @click="submit">Envoyer</button>
+  <div class="utilisateur-wrapper">
+    <h1 id="titre">Qui êtes-vous ?</h1>
+    <router-link to="/Utilisateurs/Particuliers" style="text-decoration: none; color: inherit;">
+    <div class="particulier-inner">
+      <div class="container-particulier">
+        <div class="particulier-photo">
+          <img src="../../assets/famille.jpg" id="famille-image">
+        </div>
+        <div class="particulier-description">
+          <h1 id="titre-particulier">Un particulier</h1><br>
+          <p id="paragraphe-particulier">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, harum officia fugiat quas odio, distinctio, exercitationem architecto corporis veniam eveniet voluptates accusamus? Cumque, magni fuga deserunt commodi quia illum nihil.</p>
+        </div>
+      </div>
+    </div>
+    </router-link>
+    <router-link to="/Utilisateurs/Professionnel" style="text-decoration: none; color: inherit;">
+    <div class="professionnel-inner">
+      <div class="container-professionnel">
+        <div class="professionnel-photo">
+          <img src="../../assets/business.jpg" id="business-image">
+        </div>
+        <div class="professionnel-description">
+          <h1 id="titre-professionnel">Un professionel</h1><br>
+          <p id="paragraphe-professionnel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, harum officia fugiat quas odio, distinctio, exercitationem architecto corporis veniam eveniet voluptates accusamus? Cumque, magni fuga deserunt commodi quia illum nihil.</p>
+        </div>
+      </div>
+    </div>
+    </router-link>
   </div>
 </template>
 
 <script>
-import emailjs from 'emailjs-com';
 //import nav_component from '../../components/nav-component/nav-component.vue'
 export default {
-    components:{
-    },
-    name:'choix_user',
-    data() {
-      return {
-        templateData: {
-          name: '',
-          email: ''
-        }
-      }
-    },
-    methods: {
-      submit() {
-        console.log(this.templateData)
-        try {
-          emailjs.send('service_c80epto', 'template_tlczdng', this.templateData, 'wOtWU47pMC9aqC3Wz');
-        } catch(error) {
-          console.log({error})
-        }
-        // Reset form field
-        this.templateData.name = ''
-        this.templateData.email = ''
-      },
-    }
+    components:{},
+    name:'choix_user'
+
 }
 </script>
 
 <style scoped>
-* {box-sizing: border-box;}
+  #titre {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  .particulier-wrapper{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    flex-direction:column;
+    text-align:left;
+  }
 
-.container {
-  display: block;
-  margin:auto;
-  text-align: center;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  width: 50%;
+  .particulier-inner{
+    width: 70%;
+    height: 200px;
+    margin:auto;
+    background: #f7f7f7;
+    box-shadow: 0px 0px 5px rgba(34,35,58,0.2);
+    padding: 40px 55px 45px 55px;
+    /* border-radius: 15px; */
+    transition: all .3s;
+    margin-bottom: 3em;
+  }
+
+  .professionel-wrapper{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    flex-direction:column;
+    text-align:left;
+  }
+
+  .professionnel-inner{
+    width: 70%;
+    height: 200px;
+    margin:auto;
+    background: #f7f7f7;
+    box-shadow: 0px 0px 5px rgba(34,35,58,0.2);
+    padding: 40px 55px 45px 55px;
+    /* border-radius: 15px; */
+    transition: all .3s;
+    margin-bottom: 3em;
+  }
+
+  .container-particulier {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "particulier-photo particulier-description particulier-description"
+    ". . ."
+    ". . .";
 }
 
-label {
-  float: left;
+.particulier-photo { grid-area: particulier-photo; }
+
+.particulier-description { grid-area: particulier-description; }
+
+  .container-professionnel {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "professionnel-photo professionnel-description professionnel-description"
+    ". . ."
+    ". . .";
 }
 
-input[type=text], [type=email], textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+.professionnel-photo { grid-area: professionnel-photo; }
+
+.professionnel-description { grid-area: professionnel-description; }
+
+#famille-image{
+  width: 300px;
+  height: 200px;
+  margin-top: -2.5em;
+  margin-left: -3.4em;
 }
 
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+#titre-particulier{
+  margin-top:-0.8em;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
+#paragraphe-particulier{
+  margin-top:-1.5em
+}
+
+#business-image{
+  width: 300px;
+  height: 200px;
+  margin-top: -2.5em;
+  margin-left: -3.4em;
+}
+
+#titre-professionnel{
+  margin-top:-0.8em;
+}
+
+#paragraphe-professionnel{
+  margin-top:-1.5em
 }
 </style>

@@ -10,24 +10,44 @@
                 <span class="line line3"></span>
             </div>
             <div class="logo">
-                <h1>ClimCool</h1>
+                <router-link to="/" style="text-decoration: none; color: inherit; ;"><h1 id="nom_entreprise">ClimCool</h1></router-link>
+                <img id="logo_climcool" src="./assets/logo_climcool.png">
             </div>
             <div class="menu-items">
-                 <router-link to="/" @click.native="InlineButtonClickHandler">Accueil</router-link>
-                <router-link to="/Utilisateurs">Nos clients</router-link>
-                <router-link to="/Climatiseurs"> Nos solutions</router-link>
+                <router-link to="/" @click.native="InlineButtonClickHandler">Accueil</router-link>
+                <router-link to="/Utilisateurs"> Nos solutions</router-link>
                 <router-link to="/Notre-groupe"> Notre groupe</router-link>
-                <router-link to="/Contact-devis">Contact et devis</router-link>
-                
+                <router-link to="/Contact-devis">Contact et devis</router-link>  
             </div>
         </div>
     </div>
   </nav>
   <router-view/>
+  <footer>
+    <div class="footer-component">
+        <div class="container-footer">
+            <div class="block-logo">
+                <router-link to="/" style="text-decoration: none; color: inherit; ;"><h1 id="nom_entreprise">ClimCool</h1></router-link>
+                <img id="logo_climcool" style="width: 70px;height: 70px;margin-top: -4em;margin-left: 10.9em;" src="./assets/logo_climcool.png">
+            </div>
+            <div class="block-reseau">
+              <ul>  
+                <li><a href="#" target="blank"><i class="fab fa-github"></i></a></li>  
+                <li><a href="#" target="blank"><i class="fab fa-instagram"></i></a></li>  
+                <li><a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a></li>  
+                <li><a href="#"><i class="fab fa-codepen" target="blank"></i></a></li>  
+            </ul>   
+            </div>
+            <div class="block-info">
+                <h1>test 3</h1>
+            </div>
+        </div>
+    </div>
+  </footer>
 </div>
 </template>
-
 <script>
+
 export default {
     data(){
         return{
@@ -48,6 +68,16 @@ export default {
 
  }
 
+#nom_entreprise{
+    font-weight: bolder         ;
+}
+
+#logo_climcool{
+    width: 70px;
+    height: 70px;
+    margin-top: -3.5em;
+    margin-left: 8.5em;
+}
 
 .main-nav{
     position: -webkit-sticky;
@@ -181,6 +211,9 @@ export default {
     right: 15px;
     font-size: 1.2rem;
     color: #0e2431;
+    margin-top: -35px;
+    margin-right: 20px;
+
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items{
@@ -202,6 +235,33 @@ export default {
 .nav-container input[type="checkbox"]:checked ~ .logo{
     display:none;
 }
+
+.footer-component{
+    width: 100%;
+    height: 100;
+    margin:auto;
+    background-color:#2596BE;
+    padding: 40px 55px 45px 55px;
+    /* border-radius: 15px; */
+    transition: all .3s;
+}
+
+.container-footer {  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "block-logo block-reseau block-info"
+    ". . ."
+    ". . .";
+}
+
+.block-logo { grid-area: block-logo; }
+
+.block-reseau { grid-area: block-reseau; }
+
+.block-info { grid-area: block-info; }
 
 
 </style>
