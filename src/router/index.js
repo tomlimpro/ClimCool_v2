@@ -2,7 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Accueil from '../views/Main.vue'
 import Utilisateurs from '../views/client/choix_user.vue'
-import Climatiseurs from '../views/Solutions/climatiseurs.vue'
+import Particuliers from '../views/Solutions/particuliers.vue'
+import Professionnel from '../views/Solutions/professionnel.vue'
 import Groupe from '../views/groupe/groupe.vue'
 import devis from '../views/devis/devis.vue'
 
@@ -25,9 +26,15 @@ const routes = [
     component: Utilisateurs
   },
   {
-    path: '/Climatiseurs',
-    name:'Climatiseurs',
-    component: Climatiseurs
+    path: '/Utilisateurs/Particuliers',
+    name:'Particuliers',
+    component: Particuliers
+  },
+  {
+    path:'/Utilisateurs/Professionnel',
+    name:'Professionnel',
+    component: Professionnel
+
   },
   {
     path: '/Notre-groupe',
@@ -55,7 +62,10 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
+  scrollBehavior () {
+    return { x: 0, y: 0 };
+  }
 })
 
 export default router
