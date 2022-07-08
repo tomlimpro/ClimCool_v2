@@ -26,7 +26,7 @@
             <br><p style="text-align:center; margin-top:-3em;color:#2596BE;">Sites en France</p>
           </div>
           <div class="solutions-groupe">
-            <p style="text-align: center; font-size:70px;color:#2596BE; font-weight:bolder;">5</p>
+            <p style="text-align: center; font-size:70px;color:#2596BE; font-weight:bolder;">4</p>
             <br><p style="text-align:center; margin-top:-3em;color:#2596BE;">Solutions</p>
           </div>
         </div>
