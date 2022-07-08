@@ -23,7 +23,8 @@
     </div>
   </nav>
   <router-view/>
-  <footer>
+  <footer_component/>
+  <!--<footer>
     <div class="footer-component">
         <div class="container-footer">
             <div class="block-logo">
@@ -43,12 +44,15 @@
             </div>
         </div>
     </div>
-  </footer>
+  </footer>-->
 </div>
 </template>
 <script>
-
+import footer_component from "@/footer/footer_component";
 export default {
+    components: {
+      footer_component
+    },
     data(){
         return{
             checknav:'',
