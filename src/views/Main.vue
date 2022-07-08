@@ -65,7 +65,7 @@
           </p>
           <nav id="nav-devis">
               <ul id="ul-devis">
-                <router-link to="" style="text-decoration: none; color: inherit;"><li id="li-devis">Contact et devis<span></span><span></span><span></span><span></span></li></router-link>
+                <router-link to="/Contact-devis" style="text-decoration: none; color: inherit;"><li id="li-devis">Contact et devis<span></span><span></span><span></span><span></span></li></router-link>
             </ul>
           </nav>
         </div>
