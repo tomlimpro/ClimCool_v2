@@ -5,7 +5,7 @@
       <h3>ClimCool s'occupe de tout !</h3>
     </div>
     <div class="row">
-      <p>Pour chacune des climatisations si dessous, merci d'indiquer le nombre de clim que vous souhaitez dans votre devis.</p>
+      <p>Pour chacune des climatisations ci-dessous, merci d'indiquer le nombre de clim que vous souhaitez dans votre devis.</p>
       <p>Vous recevrez un mail avec une estimation du prix, puis un expert ClimCool vous recontactera afin de finaliser le devis.</p>
     </div>
     <div class="form-group">
@@ -42,7 +42,7 @@
     <hr>
     <div class="row">
       <h2>Une question ?</h2>
-      <h3>Contactez ClimCool via le formulaire si dessous.</h3>
+      <h3>Contactez ClimCool via le formulaire ci-dessous.</h3>
     </div>
     <div class="form-group">
       <label for="nomInput">Nom</label>
