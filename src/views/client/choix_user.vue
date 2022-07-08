@@ -9,7 +9,7 @@
         </div>
         <div class="particulier-description">
           <h1 id="titre-particulier">Un particulier</h1><br>
-          <p id="paragraphe-particulier">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, harum officia fugiat quas odio, distinctio, exercitationem architecto corporis veniam eveniet voluptates accusamus? Cumque, magni fuga deserunt commodi quia illum nihil.</p>
+          <p id="paragraphe-particulier">Vous êtes un particulier interessé par nos produits ? Venez découvrir tous les produits ClimCool disponibles aux particuliers.</p>
         </div>
       </div>
     </div>
@@ -22,7 +22,7 @@
         </div>
         <div class="professionnel-description">
           <h1 id="titre-professionnel">Un professionel</h1><br>
-          <p id="paragraphe-professionnel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, harum officia fugiat quas odio, distinctio, exercitationem architecto corporis veniam eveniet voluptates accusamus? Cumque, magni fuga deserunt commodi quia illum nihil.</p>
+          <p id="paragraphe-professionnel">Vous êtes un professionnel et souhaitez découvrir nos produits ? Venez découvrir tous les produits ClimCool disponibles pour les entreprises.</p>
         </div>
       </div>
     </div>

@@ -13,7 +13,8 @@
        </div>  
        <div class="face face2">  
          <div class="content">  
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>  
+           <p>Le climatiseur monobloc est, comme son nom l'indique, constitué d'un seul élément. Le
+             monobloc est mobile, prévu pour de petites pièces...</p>
              <router-link to="/Solutions/Monobloc">En savoir plus.</router-link>
          </div>  
        </div>  
@@ -27,7 +28,8 @@
        </div>  
        <div class="face face2">  
          <div class="content">  
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>  
+           <p>Le split est composé de 2 unités, intérieure dans la pièce à climatiser, et extérieure. Le climatiseur évacue
+             les calories ...</p>
              <router-link to="/Solutions/Split">En savoir plus.</router-link>
          </div>  
        </div>  
@@ -41,7 +43,8 @@
        </div>  
        <div class="face face2">  
          <div class="content">  
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>  
+           <p>Comme le split mobile, il est composé de 2 unités reliées par des
+             tuyauteries de petits diamètres...</p>
              <router-link to="/Solutions/Splitfixe">En savoir plus.</router-link>  
          </div>  
        </div>  
@@ -55,7 +58,8 @@
        </div>  
        <div class="face face2">  
          <div class="content">  
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>  
+           <p>Le principe du split est ici appliqué à deux pièces. C'est-à-dire que le
+             climatiseur est composé de 3 unités : une extérieure et deux intérieures...</p>
              <router-link to="/Solutions/Bisplitfixe">En savoir plus.</router-link>  
          </div>  
        </div>  
@@ -71,12 +75,13 @@
            <img src="../../assets/monobloc-card.png">  
            <h3>Monobloc</h3>  
          </div>  
-       </div>  
-       <div class="face face2">  
-         <div class="content">  
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>  
-             <a href="#">Read More</a>  
-         </div>  
+       </div>
+       <div class="face face2">
+         <div class="content">
+           <p>Le climatiseur monobloc est, comme son nom l'indique, constitué d'un seul élément. Le
+             monobloc est mobile, prévu pour de petites pièces...</p>
+           <router-link to="/Solutions/Monobloc">En savoir plus.</router-link>
+         </div>
        </div>  
      </div>  
      <div class="card">  
@@ -85,12 +90,13 @@
            <img src="../../assets/split-card.png">  
            <h3>Split</h3>  
          </div>  
-       </div>  
-       <div class="face face2">  
-         <div class="content">  
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>  
-             <a href="#">Read More</a>  
-         </div>  
+       </div>
+       <div class="face face2">
+         <div class="content">
+           <p>Le split est composé de 2 unités, intérieure dans la pièce à climatiser, et extérieure. Le climatiseur évacue
+             les calories ...</p>
+           <router-link to="/Solutions/Split">En savoir plus.</router-link>
+         </div>
        </div>  
      </div>  
      <div class="card">  
@@ -99,12 +105,13 @@
            <img src="../../assets/splitfixe-card.png">  
            <h3>Split fixe</h3>  
          </div>  
-       </div>  
-       <div class="face face2">  
-         <div class="content">  
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>  
-             <a href="#">Read More</a>  
-         </div>  
+       </div>
+       <div class="face face2">
+         <div class="content">
+           <p>Comme le split mobile, il est composé de 2 unités reliées par des
+             tuyauteries de petits diamètres...</p>
+           <router-link to="/Solutions/Splitfixe">En savoir plus.</router-link>
+         </div>
        </div>  
      </div>  
      <div class="card">  
@@ -113,12 +120,13 @@
            <img src="../../assets/bisplit-fixe-card.png">  
            <h3>Bi-split fixe</h3>  
          </div>  
-       </div>  
-       <div class="face face2">  
-         <div class="content">  
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>  
-             <a href="#">Read More</a>  
-         </div>  
+       </div>
+       <div class="face face2">
+         <div class="content">
+           <p>Le principe du split est ici appliqué à deux pièces. C'est-à-dire que le
+             climatiseur est composé de 3 unités : une extérieure et deux intérieures...</p>
+           <router-link to="/Solutions/Bisplitfixe">En savoir plus.</router-link>
+         </div>
        </div>  
      </div>
    </div>
